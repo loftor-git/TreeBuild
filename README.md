@@ -18,7 +18,7 @@ TreeBuild
   
   $TreeBuild->pid='pid';  //设定父id 字段名
   
-  $TreeBuild->children='childrens';  //设定子级名
+  $TreeBuild->childrens ='childrens';  //设定子级名
   
   $TreeBuild->make();  //构建
   
