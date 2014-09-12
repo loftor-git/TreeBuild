@@ -6,14 +6,22 @@ TreeBuild
 
 
 
-  $TreeBuild = new TreeBuild($array);
+  $TreeBuild = new TreeBuild($array); //初始化
   
-  $TreeBuild->sort = true;
+  $TreeBuild->sort = true;  //是否排序
   
-  $TreeBuild->topId=$id;
+  $TreeBuild->sortField = 'sort';  //排序字段
   
-  $TreeBuild->make();
+  $TreeBuild->topId='0';  //设定顶级id的值 默认为0
   
-  $result  = $TreeBuild->getResult();
+  $TreeBuild->id='id';  //设定id 字段名
+  
+  $TreeBuild->pid='pid';  //设定父id 字段名
+  
+  $TreeBuild->children='childrens';  //设定子级名
+  
+  $TreeBuild->make();  //构建
+  
+  $result  = $TreeBuild->getResult(); //取结果
   
   
