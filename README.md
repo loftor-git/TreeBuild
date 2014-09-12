@@ -7,8 +7,13 @@ TreeBuild
 
 
   $TreeBuild = new TreeBuild($array);
+  
   $TreeBuild->sort = true;
+  
   $TreeBuild->topId=$id;
+  
   $TreeBuild->make();
+  
   $result  = $TreeBuild->getResult();
+  
   
